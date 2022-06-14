@@ -4,4 +4,23 @@
 body{
     font-family: 'Source Sans Pro', "Helvetica", "Arial", sans-serif;
     font-size: 62,5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(2, 1fr) 100px;
+    grid-template-areas: 
+        "hd"
+        "main"
+        "ft";
+}
+
+.page_header {
+    grid-area: hd;
+}
+
+.content {
+    grid-area: main;
+}
+
+.page_footer{
+    grid-area: ft;
 }
